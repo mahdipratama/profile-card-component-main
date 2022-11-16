@@ -1,0 +1,138 @@
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--main-font);
+}
+
+:root {
+  --main-bg: hsl(185, 75%, 39%);
+  --heading-color: hsl(229, 23%, 23%);
+  --text-color: hsl(227, 10%, 46%);
+  --line-color: hsl(0, 0%, 59%);
+}
+
+:root {
+  --main-font: "Kumbh Sans", sans-serif;
+}
+
+/*
+// Centering Block
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: rem(20);
+  padding-right: rem(20);
+  }
+
+
+  // max-width: 1000px;
+
+  // margin: 0 auto;
+  margin-inline: auto;
+
+  // padding-left: 20px;
+  // padding-right: 20px;
+  width: min(100% - u.rem(40), u.rem(1000));
+  */
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  background-image: url("/images/bg-pattern-top.svg"), url("/images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat;
+  background-size: 50rem;
+  background-position: -30% 275%, 129% -195%;
+  background-color: var(--main-bg);
+}
+
+.container {
+  max-width: 22.4375rem;
+  min-height: 23.5625rem;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.1;
+  margin-top: 0;
+}
+
+p {
+  margin-top: 0;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: #fff;
+}
+
+.card {
+  background-color: #fff;
+  overflow: hidden;
+  border-radius: 0.625rem;
+  position: relative;
+}
+.card__bg img {
+  width: 100%;
+  height: 100%;
+}
+.card__profile img {
+  border-radius: 50%;
+  border: 5px solid white;
+  display: inline-block;
+  position: absolute;
+  top: 37%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.card__profile-bio {
+  text-align: center;
+  padding-top: 4rem;
+}
+.card__profile-bio h2 {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+.card__profile-bio h2 span {
+  font-weight: 300;
+  color: var(--text-color);
+}
+.card__profile-bio p {
+  color: var(--text-color);
+  padding-bottom: 1.5625rem;
+  border-bottom: 1px solid var(--line-color);
+  margin-bottom: 1rem;
+}
+.card__stats {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.card__stats-items {
+  text-align: center;
+}
+.card__stats-items p {
+  font-size: 0.875rem;
+  color: var(--text-color);
+}/*# sourceMappingURL=style.css.map */

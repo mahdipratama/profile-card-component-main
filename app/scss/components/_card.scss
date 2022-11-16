@@ -1,0 +1,62 @@
+@use '../utilities' as *;
+
+.card {
+  background-color: #fff;
+  overflow: hidden;
+  border-radius: rem(10);
+  position: relative;
+
+  &__bg img {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__profile {
+    & img {
+      border-radius: 50%;
+      border: 5px solid white;
+      display: inline-block;
+      position: absolute;
+      top: 37%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &-bio {
+      text-align: center;
+      padding-top: 4rem;
+
+      & h2 {
+        font-size: rem(18);
+        font-weight: 700;
+
+        span {
+          font-weight: 300;
+          color: var(--text-color);
+        }
+      }
+
+      & p {
+        color: var(--text-color);
+        padding-bottom: rem(25);
+        border-bottom: 1px solid var(--line-color);
+        margin-bottom: rem(16);
+      }
+    }
+  }
+
+  &__stats {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    &-items {
+      text-align: center;
+
+      & p {
+        font-size: rem(14);
+        color: var(--text-color);
+      }
+    }
+  }
+}

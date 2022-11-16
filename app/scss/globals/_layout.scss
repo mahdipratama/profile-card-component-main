@@ -1,7 +1,17 @@
 @use '../utilities/' as *;
-  /*
-  // Centering Block
+/*
+// Centering Block
 
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: rem(20);
+  padding-right: rem(20);
+  }
+
+  
   // max-width: 1000px;
 
   // margin: 0 auto;
@@ -11,3 +21,24 @@
   // padding-right: 20px;
   width: min(100% - u.rem(40), u.rem(1000));
   */
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: rem(20);
+  padding-right: rem(20);
+
+  background-image: url('/images/bg-pattern-top.svg'),
+    url('/images/bg-pattern-bottom.svg');
+  background-repeat: no-repeat;
+  background-size: 50rem;
+  background-position: -30% 275%, 129% -195%;
+  background-color: var(--main-bg);
+}
+
+.container {
+  max-width: rem(359);
+  min-height: rem(377);
+}
